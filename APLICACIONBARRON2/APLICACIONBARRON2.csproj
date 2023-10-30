@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B602966-A70D-41EE-8531-768E33F582D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>APLICACIONBARRON2</RootNamespace>
+    <AssemblyName>APLICACIONBARRON2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FormaListaTienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FormaListaTienda.Designer.cs">
+      <DependentUpon>FormaListaTienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FormaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FormaMenu.Designer.cs">
+      <DependentUpon>FormaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FormaRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FormaRegistro.Designer.cs">
+      <DependentUpon>FormaRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FormaEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FormaEmpleado.Designer.cs">
+      <DependentUpon>FormaEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FormaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\FormaUsuario.Designer.cs">
+      <DependentUpon>FormaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FormaListaTienda.resx">
+      <DependentUpon>FormaListaTienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FormaMenu.resx">
+      <DependentUpon>FormaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FormaRegistro.resx">
+      <DependentUpon>FormaRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FormaEmpleado.resx">
+      <DependentUpon>FormaEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FormaUsuario.resx">
+      <DependentUpon>FormaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Descargar icono de perfil de usuario gratis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono De Candado Diseño Plantilla Vector Isolated PNG , Imágenes Prediseñadas De Candado, Iconos De Plantilla, Iconos De Candado PNG y Vector para Descargar Gratis _ Pngtree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono De Candado Diseño Plantilla Vector Isolated PNG , Imágenes Prediseñadas De Candado, Iconos De Plantilla, Iconos De Candado PNG y Vector para Descargar Gratis _ Pngtree1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos de Salir Al Boton Aplicacion para descargar gratis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos de Salir Al Boton Aplicacion para descargar gratis1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cerrar, borrar, eliminar el icono cuadrado _ Icono Gratis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\من ايقونة, مشكلة مشكلة, أيقونة, من PNG والمتجهات للتحميل مجانا.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Premium Vector _ Welcome brush lettering_  illustration for decoration or banner slogan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome Letter Clipart Vector, Welcome Text Hand Lettering With Flowers And Hearts Of Love, Welcome, Welcome Home, Welcome Baby Girl PNG Image For Free Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Welcome Letter Vector Hd PNG Images, Welcome Text Hand Lettering With Flowers And Leaves Decoration Letters, Welcome Back Clipart, Welcome, Welcome Home PNG Image For Free Download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Starting from scratch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agregar Doc _ Icono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eliminar _ Icono.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iconos de Editar Documento para descargar gratis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28 asombrosos fondos diapositivas Power Point que puedes descargar gratis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download premium vector of Dark tone Memphis Instagram ad background vector by Wan about dark tone memphis instagram background, pattern, aesthetic template background, aesthetic powerpoint, and memphis 2210929.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %283%291.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
